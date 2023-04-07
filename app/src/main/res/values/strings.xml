@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyMotorwayDemo</string>
+    <string name="app_title">My Motorway Demo</string>
+    <string name="edit_text_hint">Please enter any text\nor\nPress refresh button</string>
+    <string name="word_count_string">Word Count: %s</string>
+    <string name="refresh_button">Refresh button</string>
+</resources>
