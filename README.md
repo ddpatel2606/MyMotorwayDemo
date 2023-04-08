@@ -3,7 +3,9 @@
 <p align="left">This is a demo app that implements <b>MVVM</b> design pattern by following the <b>Clean Architecture</b> principles.
 </p>
 
-<img src="appImages/screenshots_banner.png" width="3104"/>
+<img src="appImages/app_screenshot_1.png" width="1080"/>
+
+<img src="appImages/app_screenshot_2.png" width="1080"/>
 
 ### Tech stack & Open-source libraries
 - Minimum SDK level 26 to latest
@@ -11,15 +13,13 @@
 - Implementing MVVM design pattern with Android Architecture Components by following clean architecture principles.
 - Dependency injection with [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 - Observing data changes and updating the UI state with [StateFlow](https://kotlinlang.org/api/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/-state-flow/)
-- Used [Jetpack Compose](https://developer.android.com/jetpack/compose) in one of the module with [Material 3 UI](https://m3.material.io/develop/android/jetpack-compose)
 - [Jetpack](https://developer.android.com/jetpack) libraries
-    - [Jetpack Compose](https://developer.android.com/jetpack/compose)
+    - [Jetpack Compose](https://developer.android.com/jetpack/compose) for creating ui.
     - [Lifecycle](https://developer.android.com/topic/libraries/architecture/lifecycle) - Handling lifecycles with lifecycle-aware component
     - [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) - Storing and managing UI-related data in a lifecycle-conscious way
     - [Hilt](https://developer.android.com/training/dependency-injection/hilt-android) - Injecting dependencies
     - [Kotlin Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) - Allowing asynchronous programming with Kotlin
 - [Robolectric](https://robolectric.org/) for Unit testing
-- [Espresso](https://developer.android.com/training/testing/espresso) for UI testing
 - [Espresso](https://developer.android.com/training/testing/espresso) for UI testing
 - [Compose Ui Testing](https://developer.android.com/jetpack/compose/testing) for compose UI testing
 - [Mockito](https://site.mockito.org/) mocking framework for unit tests
@@ -42,17 +42,13 @@
 
 The project is structured into three distinct layers that have been designed to address concerns related to Separation of Concerns and Testability.
 - Data
-- Presentation
 - Domain
+- Presentation
 
 ### Data
 The first layer is the Data layer, which is responsible for managing the application data that is fetched from either the network, the local database or from datasource.
 - `datasource` : This folder having business logic (Random text generator and word count from given string).
 - `repositoryIml` : The repository package contains the implementations of repository interfaces defined in the domain layer.
-
-### Presentation
-The second layer is the Presentation layer, which is responsible for rendering the application data on the screen.
-- `ui` : The ui package comprises Activity and compose Ui components with their corresponding ViewModel classes.
 
 ### Domain
 The third and central layer of the project is the Domain layer.
@@ -60,6 +56,10 @@ This layer acts as a bridge between the data and presentation layers, retrieving
 The Domain layer is independent of other layers, which means that changes in other layers do not affect it.
 - `repository` : The repository package contains repository interfaces that abstract the domain layer from the data layer.
 - `usecase` : The usecase package contains use cases that handle the business logic, which can be reused by multiple ViewModels.
+
+### Presentation
+The second layer is the Presentation layer, which is responsible for rendering the application data on the screen.
+- `ui` : The ui package comprises Activity and compose Ui components with their corresponding ViewModel classes.
 
 
 ## Try the App
