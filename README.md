@@ -3,9 +3,9 @@
 <p align="left">This is a demo app that implements <b>MVVM</b> design pattern by following the <b>Clean Architecture</b> principles.
 </p>
 
-<img src="appImages/app_screenshot_1.png" width="1080"/>
+<img src="appImages/app_screenshot_1.png" width="350"/>
 
-<img src="appImages/app_screenshot_2.png" width="1080"/>
+<img src="appImages/app_screenshot_2.png" width="350"/>
 
 ### Tech stack & Open-source libraries
 - Minimum SDK level 26 to latest
