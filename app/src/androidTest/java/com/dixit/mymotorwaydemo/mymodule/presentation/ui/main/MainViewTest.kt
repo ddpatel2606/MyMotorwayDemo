@@ -4,8 +4,6 @@ import androidx.compose.material.Surface
 import androidx.compose.ui.test.*
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import androidx.test.filters.LargeTest
-import androidx.test.filters.MediumTest
 import com.dixit.mymotorwaydemo.HiltTestActivity
 import com.dixit.mymotorwaydemo.R
 import com.dixit.mymotorwaydemo.mymodule.data.repositoryIml.UITestRandomTextRepository
@@ -15,7 +13,6 @@ import com.dixit.mymotorwaydemo.mymodule.domain.usecases.GetRandomParagraphUseCa
 import com.dixit.mymotorwaydemo.ui.theme.MyMotorwayDemoTheme
 import dagger.hilt.android.testing.HiltAndroidRule
 import dagger.hilt.android.testing.HiltAndroidTest
-import org.junit.After
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
