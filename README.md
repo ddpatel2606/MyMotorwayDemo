@@ -3,9 +3,14 @@
 <p align="left">This is a demo app that implements <b>MVVM</b> design pattern by following the <b>Clean Architecture</b> principles.
 </p>
 
-<img src="appImages/app_screenshot_1.png" width="350"/>
-
-<img src="appImages/app_screenshot_2.png" width="350"/>
+<div class="row">
+  <div class="column">
+   <img src="appImages/app_screenshot_1.png" width="350"/>
+  </div>
+  <div class="column">
+    <img src="appImages/app_screenshot_2.png" width="350"/>
+  </div>
+</div>
 
 ### Tech stack & Open-source libraries
 - Minimum SDK level 26 to latest
@@ -64,3 +69,16 @@ The second layer is the Presentation layer, which is responsible for rendering t
 
 ## Try the App
 Check out the [Releases](https://github.com/ddpatel2606/MyMotorwayDemo/releases) and download & install the <a href="apk/app-debug.apk">APK file<a/> to try the app.
+
+## Some of the clarification
+What we are looking for:
+- An understanding of programming structure and principles : Used some of the concepts of clean architecture and used SOLID principles
+- Demonstrable understanding of the chosen interface approach, architecture and use of Kotlin. : Used repository pattern will provide abstraction layer and presentation layer don't know where the data is come from.
+- Assurance that the underlying logic of the code works : yes It's working demo you can check on release page or use this <a href="apk/app-debug.apk">APK file<a/> also there are working UI(Instrumentation) and unit tests as well. 
+- A project that opens, compiles and runs in the current release of Android Studio : yes It's compiled in Android Studio Electric Eel | 2022.1.1 Patch 2.
+
+What we are not looking for:
+- Complex and elaborate technical architectures : I've used very simple but very scalable solution.
+- Use of unnecessary third party libraries : I didn't used so many third party library. only used those once's which help me to create clean architecture and for easily testable.
+- An over designed user interface : I've used Jetpack Compose for UI, and It's not much complex and advanced. but On the other side, 
+I can easily integrate data binding and view binding by creating another Activity which can use the xml file. And It can scale the app without affecting other functionality. 
