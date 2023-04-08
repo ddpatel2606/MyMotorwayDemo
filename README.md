@@ -3,14 +3,9 @@
 <p align="left">This is a demo app that implements <b>MVVM</b> design pattern by following the <b>Clean Architecture</b> principles.
 </p>
 
-<div class="row">
-  <div class="column">
-   <img src="appImages/app_screenshot_1.png" width="350"/>
-  </div>
-  <div class="column">
-    <img src="appImages/app_screenshot_2.png" width="350"/>
-  </div>
-</div>
+ScreenShot 1               |  ScreenShot 1
+:-------------------------:|:-------------------------:
+![](appImages/app_screenshot_1.png)  |  ![](appImages/app_screenshot_2.png)
 
 ### Tech stack & Open-source libraries
 - Minimum SDK level 26 to latest
